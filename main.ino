@@ -20,7 +20,7 @@ void setup() {
 int checkOutlier(int total){
     for(int j = 0; j < sizeof(resList)/sizeof(resList[0]); j++){
         if(resList[j] - total > 100){
-            Serial.println("passou por ldr: ")
+            Serial.println("passou por ldr: ");
             Serial.println(resList[j]);
             return resList[j];
           }
